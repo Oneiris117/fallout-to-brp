@@ -43,50 +43,50 @@
         <div>
             <input type="text" class="sheet-text_statname" value="Strength" readonly />
             <button type="roll" class="sheet-skill_button" name="attr_effort_roll" value="&{template:default} {{name=@{character_name}}} {{Effort=[[[[@{strength_%}]] + [[?{Modifier|0}]] - [[1d100]] ]]}}"></button>&nbsp;
-            <input type="number" class="sheet-number" name="attr_strength" value='@{strength_mod} + @{strength_base}' disabled="true"/>&nbsp;
+            <input type="text" class="sheet-number_dis" name="attr_strength" value='@{strength_mod} + @{strength_base}' disabled="true"/>&nbsp;
             <input type="number" class="sheet-number" name="attr_strength_mod" value="0" />&nbsp;
             <input type="number" class="sheet-number" name="attr_strength_base" value="0" />&nbsp;
-            <input type="number" class="sheet-number" name="attr_strength_%" value='(ceil(((@{strength_base} + @{strength_mod}) * 5)))' disabled="true" />
+            <input type="text" class="sheet-number_dis" name="attr_strength_%" value='(ceil(((@{strength_base} + @{strength_mod}) * 5)))' disabled="true" />
         </div>
         <div>
             <input type="text" class="sheet-text_statname" value="Dexterity" readonly />
             <button type="roll" class="sheet-skill_button" name="attr_dexterity_roll" value="&{template:default} {{name=@{character_name}}} {{Agility=[[[[@{dexterity_%}]] + [[?{Modifier|0}]] - [[1d100]] ]]}}"></button></th>&nbsp;
-            <input type="number" class="sheet-number" name="attr_dexterity" value='@{dexterity_mod} + @{dexterity_base}' disabled="true"/>&nbsp;
+            <input type="text" class="sheet-number_dis" name="attr_dexterity" value='@{dexterity_mod} + @{dexterity_base}' disabled="true"/>&nbsp;
             <input type="number" class="sheet-number" name="attr_dexterity_mod" value="0" />&nbsp;
             <input type="number" class="sheet-number" name="attr_dexterity_base" value="0" />&nbsp;
-            <input type="number" class="sheet-number" name="attr_dexterity_%" value='(ceil(((@{dexterity_base} + @{dexterity_mod}) * 5)))' disabled="true" />
+            <input type="text" class="sheet-number_dis" name="attr_dexterity_%" value='(ceil(((@{dexterity_base} + @{dexterity_mod}) * 5)))' disabled="true" />
         </div>        
         <div>
             <input type="text" class="sheet-text_statname" value="Constitution" readonly />
             <button type="roll" class="sheet-skill_button" name="attr_constitution_roll" value="&{template:default} {{name=@{character_name}}} {{Constitution=[[[[@{constitution_%}]] + [[?{Modifier|0}]] - [[1d100]] ]]}}"></button></th>&nbsp;
-            <input type="number" class="sheet-number" name="attr_constitution" value='@{constitution_mod} + @{constitution_base}' disabled="true"/>&nbsp;
+            <input type="text" class="sheet-number_dis" name="attr_constitution" value='@{constitution_mod} + @{constitution_base}' disabled="true"/>&nbsp;
             <input type="number" class="sheet-number" name="attr_constitution_mod" value="0" />&nbsp;
             <input type="number" class="sheet-number" name="attr_constitution_base" value="0" />&nbsp;
-            <input type="number" class="sheet-number" name="attr_constitution_%" value='(ceil(((@{constitution_base} + @{constitution_mod}) * 5)))' disabled="true" />
+            <input type="text" class="sheet-number_dis" name="attr_constitution_%" value='(ceil(((@{constitution_base} + @{constitution_mod}) * 5)))' disabled="true" />
         </div>
         <div>
             <input type="text" class="sheet-text_statname" value="Intelligence" readonly />
             <button type="roll" class="sheet-skill_button" name="attr_intelligence_roll" value="&{template:default} {{name=@{character_name}}} {{Intelligence=[[[[@{intelligence_%}]] + [[?{Modifier|0}]] - [[1d100]] ]]}}"></button></th>&nbsp;
-            <input type="number" class="sheet-number" name="attr_intelligence" value='@{intelligence_mod} + @{intelligence_base}' disabled="true"/>&nbsp;
+            <input type="text" class="sheet-number_dis" name="attr_intelligence" value='@{intelligence_mod} + @{intelligence_base}' disabled="true"/>&nbsp;
             <input type="number" class="sheet-number" name="attr_intelligence_mod" value="0" />&nbsp;
             <input type="number" class="sheet-number" name="attr_intelligence_base" value="0" />&nbsp;
-            <input type="number" class="sheet-number" name="attr_intelligence_%" value='(ceil(((@{intelligence_base} + @{intelligence_mod}) * 5)))' disabled="true" />
+            <input type="text" class="sheet-number_dis" name="attr_intelligence_%" value='(ceil(((@{intelligence_base} + @{intelligence_mod}) * 5)))' disabled="true" />
         </div>        
         <div>
             <input type="text" class="sheet-text_statname" value="Charisma" readonly />
             <button type="roll" class="sheet-skill_button" name="attr_charisma_roll" value="&{template:default} {{name=@{character_name}}} {{Charisma=[[[[@{charisma_%}]] + [[?{Modifier|0}]] - [[1d100]] ]]}}"></button></th>&nbsp;
-            <input type="number" class="sheet-number" name="attr_charisma" value='@{charisma_mod} + @{charisma_base}' disabled="true"/>&nbsp;
+            <input type="text" class="sheet-number_dis" name="attr_charisma" value='@{charisma_mod} + @{charisma_base}' disabled="true"/>&nbsp;
             <input type="number" class="sheet-number" name="attr_charisma_mod" value="0" />&nbsp;
             <input type="number" class="sheet-number" name="attr_charisma_base" value="0" />&nbsp;
-            <input type="number" class="sheet-number" name="attr_charisma_%" value='(ceil(((@{charisma_base} + @{charisma_mod}) * 5)))' disabled="true" />
+            <input type="text" class="sheet-number_dis" name="attr_charisma_%" value='(ceil(((@{charisma_base} + @{charisma_mod}) * 5)))' disabled="true" />
         </div>
         <div>
             <input type="text" class="sheet-text_statname" value="Power" readonly />
             <button type="roll" class="sheet-skill_button" name="attr_power_roll" value="&{template:default} {{name=@{character_name}}} {{Luck=[[[[@{power_%}]] + [[?{Modifier|0}]] - [[1d100]] ]]}}"></button></th>&nbsp;
-            <input type="number" class="sheet-number" name="attr_power" value='@{power_mod} + @{power_base}' disabled="true" />&nbsp;
+            <input type="text" class="sheet-number_dis" name="attr_power" value='@{power_mod} + @{power_base}' disabled="true" />&nbsp;
             <input type="number" class="sheet-number" name="attr_power_mod" value='0' />&nbsp;
             <input type="number" class="sheet-number" name="attr_power_base" value='0' />&nbsp;
-            <input type="number" class="sheet-number" name="attr_power_%" value='(ceil(((@{power_base} + @{power_mod}) * 5)))' disabled="true" />
+            <input type="text" class="sheet-number_dis" name="attr_power_%" value='(ceil(((@{power_base} + @{power_mod}) * 5)))' disabled="true" />
         </div>        
         <div>
             <input type="text" class="sheet-text_statname" value="Size" readonly />
@@ -105,20 +105,20 @@
     <div class="sheet-center_stat">
         <div>
             <input type="text" class="sheet-text_statsname" value="Damage Bonus" readonly style="width:40%" />
-            <input type="number" class="sheet-number" name="attr_bonus_number" value='(ceil(((@{strength_base} + @{size}))))' disabled="true"/>&nbsp;
-            <input type="text" class="sheet-number" name="attr_bonus_value" style="width:45px" />
+            <input type="text" class="sheet-number_dis" name="attr_bonus_number" value='(ceil(((@{strength_base} + @{size}))))' disabled="true"/>&nbsp;
+            <input type="text" class="sheet-number_dis" name="attr_bonus_value" />
         </div>
         <div>
             <input type="text" class="sheet-text_statsname" value="Exp. Bonus" readonly style="width:40%" />
-            <input type="number" class="sheet-number" name="attr_base_actionpoints" value='(ceil(((@{intelligence_base})/2)))' disabled="true"/>
+            <input type="text" class="sheet-number_dis" name="attr_base_actionpoints" value='(ceil(((@{intelligence_base})/2)))' disabled="true"/>
         </div>
         <div>
             <input type="text" class="sheet-text_statsname" value="Hit Points" readonly style="width:40%" />
-            <input type="number" class="sheet-number" name="attr_base_hit_points" value='(ceil(((@{constitution_base} + @{size}))))' disabled="true" />
+            <input type="text" class="sheet-number_dis" name="attr_base_hit_points" value='(ceil(((@{constitution_base} + @{size}))))' disabled="true" />
         </div>
         <div>
             <input type="text" class="sheet-text_statsname" value="Major Wounds" readonly style="width:40%" />
-            <input type="number" class="sheet-number" name="attr_base_major_wounds" value='(ceil(((@{base_hit_points})/2)))' disabled="true" />
+            <input type="text" class="sheet-number_dis" name="attr_base_major_wounds" value='(ceil(((@{base_hit_points})/2)))' disabled="true" />
         </div>
         </div>
         <h3 style="width:98%">Languages</h3>
@@ -131,13 +131,13 @@
         <div class="sheet-tab-br"></div>
         <div>
             <input type="text" class="sheet-text_damage" value="Total ENC" readonly style='width:25%'/>
-            <input type="number" class="sheet-number" name="attr_total_enc" value='(@{strength_base} * 6)' disabled="true" style='width:15%'/>
+            <input type="text" class="sheet-number_dis" name="attr_total_enc" value='(@{strength} * 6)' disabled="true" style='width:15%'/>
             <input type="text" class="sheet-text_damage" value="Current ENC" readonly style='width:25%'/>
-            <input type="number" class="sheet-number" name="attr_current_enc" value='@{current_enc}' disabled="true" style='width:15%'/>
+            <input type="number" class="sheet-number" name="attr_current_enc" value="@{current_enc}" style='width:15%'/>
         </div>
         <div>
-            <input type="text" class="sheet-text_damage" value="Caps" readonly style='width:20%'/>&nbsp;
-            <input type="text" class="sheet-number" name="attr_caps" style='width:10%'/>
+            <input type="text" class="sheet-text_damage" value="SP" readonly style='width:20%'/>&nbsp;
+            <input type="number" class="sheet-number" name="attr_sp" style='width:10%'/>
         </div>
         <div>
             <textarea name="attr_item_text" style="width:95%;height:10%"></textarea>
@@ -145,19 +145,19 @@
     </div>
     <fieldset class="repeating_inventory">
         <div class="sheet-tab-br"></div>
-        <div class="sheet-center" style="width:95%">
+        <div class="sheet-center" style="width:98%">
             <div class="sheet-tab-br"></div>
             <div>
-                <input type="text" class="sheet-text_damage" value="Item" readonly style="width:10%"/>
-                <input type="text" class="sheet-number" name="attr_item_name" style="width:20%"/>
-                <input type="text" class="sheet-text_damage" value="ENC" readonly style="width:10%"/>
+                <input type="text" class="sheet-text_damage" value="Item" readonly style="width:12%"/>
+                <input type="text" class="sheet-number" name="attr_item_name" style="width:21%"/>
+                <input type="text" class="sheet-text_damage" value="ENC" readonly style="width:11%"/>
                 <input type="number" class="sheet-number" name="attr_item_enc" value="0" style="width:20%"/>
-                <input type="text" class="sheet-text_damage" value="Amount" readonly style="width:10%"/>
-                <input type="number" class="sheet-number" name="attr_item_amount" value="0" style="width:20%"/>
+                <input type="text" class="sheet-text_damage" value="Amt" readonly style="width:11%"/>
+                <input type="number" class="sheet-number" name="attr_item_amount" value="0" style="width:21"/>
             </div>
            <div>
            <textarea name="attr_item_text" style="width:95%;height:10%"></textarea>
-            </div>
+           </div>
         </div>
     </fieldset>
     </div> 
@@ -171,33 +171,94 @@
             <h3 style="width:98%">Combat Skills</h3>
             <div class="sheet-center_skill" style="width:95%">
             <div>
-                <input type="text" class="sheet-text_stattag" value="Roll" readonly style="width:10%"/>
+                <input type="text" class="sheet-text_statscenter" value="Roll" readonly style="width:10%"/>
                 <input type="text" class="sheet-text_statscenter" value="Skill" readonly style="width:27%"/>
-                <input type="text" class="sheet-text_stattag" value="EXP" readonly style="width:9%"/>
-                <input type="text" class="sheet-text_stattag" value="Total" readonly style="width:11%"/>
-                <input type="text" class="sheet-text_stattag" value="+/-" readonly style="width:11%"/>
+                <input type="text" class="sheet-text_statscenter" value="XP" readonly style="width:9%"/>
+                <input type="text" class="sheet-text_statscenter" value="Total" readonly style="width:11%"/>
+                <input type="text" class="sheet-text_statscenter" value="Bonus" readonly style="width:11%"/>
+                <input type="text" class="sheet-text_statscenter" value="+/-" readonly style="width:9%"/>
             </div>
             <div>
-                <input type="text" class="sheet-text_skillname" value="Artillery" readonly style="margin-left:35px" />
-                <fieldset class="repeating_artillery">
-                    <button class="sheet-skill_button" type='roll' name="attr_roll-artillery" value="&{template:default} {{name=@{character_name}}} {{@{repeating_artillery_$0_artillery_skill} =[[[[@{artillery}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
-                    <input type="text" class="sheet-text_skillname" name=attr_artillery_skill />
-                    <input name="attr_tagskill31" value="1" type="checkbox">&nbsp;&nbsp;
-                    <input type="number" class="sheet-number" name="attr_artillery" value="((@{dexterity_base} - 10) + (floor((@{intelligence_base} - 10)/2)) + (floor((@{strength_base} - 10)/2)) + @{mod-artillery})" disabled="true"/>
-                    <input type="number" class="sheet-number"name="attr_mod-artillery" value="0" />
-                </fieldset>
-            </div>
-            <div>
-                <button class="sheet-skill_button" type='roll' name="attr_roll-brawl" value="&{template:default} {{name=@{character_name}}} {{Big Guns=[[[[@{big_guns}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                <button class="sheet-skill_button" type='roll' name="attr_roll-brawl" value="&{template:default} {{name=@{character_name}}} {{Big Guns=[[[[@{brawl}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
                 <input type="text" class="sheet-text_skillname" value="Brawl" readonly />
                 <input name="attr_tagskill1" value="1" type="checkbox">&nbsp;&nbsp;
-                <input type="number" class="sheet-number" name="attr_brawl" value="(@{mod-brawl} + (@{strength_base} - 10) + (floor((@{dexterity_base} - 10)/2)) + (floor((@{intelligence_base} - 10)/2)))" disabled="true"/>
+                <input type="text" class="sheet-number_dis" name="attr_brawl" value="(@{mod-brawl} + @{str_weap_cb} + @{brawl_bc})" disabled="true"/>
+                <select class="sheet-number_sel" name="attr_brawl_bc">
+                  <option value="0" selected="selected">0</option>
+                  <option value="1">1</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="25">25</option>
+                </select>
                 <input type="number" class="sheet-number"name="attr_mod-brawl" value="0" />
     	    </div>
             <div>
+                <button class="sheet-skill_button" type='roll' name="attr_roll-grapple" value="&{template:default} {{name=@{character_name}}} {{Grapple=[[[[@{grapple}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                <input type="text" class="sheet-text_skillname" value="Grapple" readonly />
+                <input name="attr_tagskill4" value="1" type="checkbox">&nbsp;&nbsp;
+                <input type="text" class="sheet-number_dis" name="attr_grapple" value="(@{mod-grapple} + @{str_weap_cb} + @{grapple_bc})" disabled="true"/>
+                <select class="sheet-number_sel" name="attr_grapple_bc">
+                  <option value="0" selected="selected">0</option>
+                  <option value="1">1</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="25">25</option>
+                </select>
+                <input type="number" class="sheet-number" name="attr_mod-grapple" value="0" />
+            </div>
+            <div>
+                <button class="sheet-skill_button" type='roll' name="attr_roll-martial_arts" value="&{template:default} {{name=@{character_name}}} {{Martial Arts=[[[[@{martial_arts}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                <input type="text" class="sheet-text_skillname" value="Martial Arts" readonly />
+                <input name="attr_tagskill7" value="1" type="checkbox">&nbsp;&nbsp;
+                <input type="text" class="sheet-number_dis" name="attr_martial_arts" value="(@{mod-martial_arts} + @{dex_weap_cb})" disabled="true"/>
+                <input type="number" class="sheet-number" name= "attr_martial_arts_bc" value="0" />
+                <input type="number" class="sheet-number" name="attr_mod-martial_arts" value="0" />
+            </div>
+            <div>
+                <button class="sheet-skill_button" type='roll' name="attr_roll-shield" value="&{template:default} {{name=@{character_name}}} {{Shield=[[[[@{shield}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                <input type="text" class="sheet-text_skillname" value="Shield" readonly />
+                <input name="attr_tagskill7" value="1" type="checkbox">&nbsp;&nbsp;
+                <input type="text" class="sheet-number_dis" name="attr_shield" value="(@{mod-shield} + @{dex_weap_cb})" disabled="true"/>
+                <input type="number" class="sheet-number" name="attr_shield_bc" value="0" />
+                <input type="number" class="sheet-number"name="attr_mod-shield" value="0" />
+            </div>
+            <div>
+                <button class="sheet-skill_button" type='roll' name="attr_roll-parry" value="&{template:default} {{name=@{character_name}}} {{Parry=[[[[@{parry}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                <input type="text" class="sheet-text_skillname" value="Parry" readonly />
+                <input name="attr_tagskill10" value="1" type="checkbox">&nbsp;&nbsp;
+                <input type="text" class="sheet-number_dis" name="attr_parry" value="(@{mod-parry} + @{dex_weap_cb})" disabled="true"/>
+                <input type="number" class="sheet-number" name="attr_parry_bc" value="0" />
+                <input type="number" class="sheet-number" name="attr_mod-parry" value="0" />
+            </div>
+            <div>
+                <input type="text" class="sheet-text_skillname2" value="Artillery" readonly />
+                <fieldset class="repeating_artillery">
+                    <button class="sheet-skill_button" type='roll' name="attr_roll-artillery" value="&{template:default} {{name=@{character_name}}} {{@{repeating_artillery_$0_artillery_skill}=[[[[@{artillery}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                    <input type="text" class="sheet-text_skillname" name=attr_artillery_skill />
+                    <input name="attr_tagskill31" value="1" type="checkbox">&nbsp;&nbsp;
+                    <input type="text" class="sheet-number_dis" name="attr_artillery" value="(@{dex_weap_cb} + @{mod-artillery})" disabled="true"/>
+                    <input type="number" class="sheet-number" name="attr_artillery_bc" value="0" />
+                    <input type="number" class="sheet-number" name="attr_mod-artillery" value="0" />
+                </fieldset>
+            </div>
+            <div>
+                <input type="text" class="sheet-text_skillname" value="Energy Weapons" readonly style="margin-left:35px" />
+                <fieldset class="repeating_ew">
+                    <button class="sheet-skill_button" type='roll' name="attr_roll-ew" value="&{template:default} {{name=@{character_name}}} {{@{repeating_ew_$0_ew_skill}=[[[[@{ew}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                    <input type="text" class="sheet-text_skillname" name=attr_ew_skill />
+                    <input name="attr_tagskill2" value="1" type="checkbox">&nbsp;&nbsp;
+                    <input type="number" class="sheet-number" name="attr_ew" value="(@{mod-ew} + (floor((@{strength_base} - 10)/2)) + (@{dexterity_base} - 10) + (floor((@{intelligence_base} -10)/2)))" disabled="true"/>
+                    <input type="number" class="sheet-number"name="attr_mod-ew" value="0" />
+                </fieldset>
+            </div>            
+            <div>
                 <input type="text" class="sheet-text_skillname" value="Firearms" readonly style="margin-left:35px" />
                 <fieldset class="repeating_firearms">
-                    <button class="sheet-skill_button" type='roll' name="attr_roll-firearms" value="&{template:default} {{name=@{character_name}}} {{Firearms=[[[[@{firearms}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                    <button class="sheet-skill_button" type='roll' name="attr_roll-firearms" value="&{template:default} {{name=@{character_name}}} {{@{repeating_firearms_$0_firearms_skill}=[[[[@{firearms}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
                     <input type="text" class="sheet-text_skillname" name=attr_firearms_skill />
                     <input name="attr_tagskill3" value="1" type="checkbox">&nbsp;&nbsp;
                     <input type="number" class="sheet-number" name="attr_firearms" value="(@{mod-firearms} + (floor((@{strength_base} - 10)/2)) + (@{dexterity_base} - 10) + (floor((@{intelligence_base} -10)/2)))" disabled="true"/>
@@ -205,28 +266,34 @@
                 </fieldset>
             </div>
             <div>
-                <button class="sheet-skill_button" type='roll' name="attr_roll-small_guns" value="&{template:default} {{name=@{character_name}}} {{Small Guns=[[[[@{small_guns}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
-                <input type="text" class="sheet-text_skillname" value="Small Guns" readonly />
-                <input name="attr_tagskill4" value="1" type="checkbox">&nbsp;&nbsp;
-                <input type="number" class="sheet-number" name="attr_small_guns" value="(@{mod-small_guns} + 5 + @{perception_base} + @{perception_base} + @{power_base} + 20*@{tagskill4} + @{temp-small_guns})" disabled="true"/>
-                <input type="number" class="sheet-number"name="attr_mod-small_guns" value="0" />
-            </div>
-            <div>
-                <input type="text" class="sheet-text_skillname" value="Picks" readonly style="margin-left:35px" />                
-                <fieldset class="repeating_picks">
-                    <button class="sheet-skill_button" type='roll' name="attr_roll-picks" value="&{template:default} {{name=@{character_name}}} {{Picks=[[[[@{picks}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
-                    <input type="text" class="sheet-text_skillname" name=attr_picks_skill />
+                <input type="text" class="sheet-text_skillname" value="Heavy Weapons" readonly style="margin-left:35px" />                
+                <fieldset class="repeating_hw">
+                    <button class="sheet-skill_button" type='roll' name="attr_roll-hw" value="&{template:default} {{name=@{character_name}}} {{@{repeating_hw_$0_hw_skill}=[[[[@{hw}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                    <input type="text" class="sheet-text_skillname" name=attr_hw_skill />
                     <input name="attr_tagskill5" value="1" type="checkbox">&nbsp;&nbsp;
-                    <input type="number" class="sheet-number" name="attr_picks" value="(@{mod-picks} + (@{strength_base} - 10) + (floor((@{dexterity_base} - 10)/2)) + (floor((@{intelligence_base} - 10)/2)))" disabled="true"/>
-                    <input type="number" class="sheet-number"name="attr_mod-picks" value="0" />                    
+                    <input type="number" class="sheet-number" name="attr_hw" value="(@{mod-hw} + (@{strength_base} - 10) + (floor((@{dexterity_base} - 10)/2)) + (floor((@{intelligence_base} - 10)/2)))" disabled="true"/>
+                    <input type="number" class="sheet-number"name="attr_mod-hw" value="0" />                    
                 </fieldset>
             </div>
             <div>
-                <button class="sheet-skill_button" type='roll' name="attr_roll-unarmed" value="&{template:default} {{name=@{character_name}}} {{Unarmed=[[[[@{unarmed}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
-                <input type="text" class="sheet-text_skillname" value="Unarmed" readonly />
-                <input name="attr_tagskill7" value="1" type="checkbox">&nbsp;&nbsp;
-                <input type="number" class="sheet-number" name="attr_unarmed" value="(@{mod-unarmed} + @{strength_base} + @{constitution_base} + @{dexterity_base} + @{power_base} + 20*@{tagskill7} + @{temp-unarmed})" disabled="true"/>
-                <input type="number" class="sheet-number"name="attr_mod-unarmed" value="0" />
+                <input type="text" class="sheet-text_skillname" value="Melee Weapons" readonly style="margin-left:35px" />                
+                <fieldset class="repeating_mew">
+                    <button class="sheet-skill_button" type='roll' name="attr_roll-mew" value="&{template:default} {{name=@{character_name}}} {{@{repeating_mew_$0_mew_skill}=[[[[@{mew}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                    <input type="text" class="sheet-text_skillname" name=attr_mew_skill />
+                    <input name="attr_tagskill6" value="1" type="checkbox">&nbsp;&nbsp;
+                    <input type="number" class="sheet-number" name="attr_mew" value="(@{mod-mew} + (floor((@{strength_base} - 10)/2)) + (@{dexterity_base} - 10) + (floor((@{intelligence_base} -10)/2)))" disabled="true"/>
+                    <input type="number" class="sheet-number"name="attr_mod-mew" value="0" />                    
+                </fieldset>
+            </div>
+            <div>
+                <input type="text" class="sheet-text_skillname" value="Ranged Weapons" readonly style="margin-left:35px" />                
+                <fieldset class="repeating_ranged">
+                    <button class="sheet-skill_button" type='roll' name="attr_roll-ranged" value="&{template:default} {{name=@{character_name}}} {{@{repeating_ranged_$0_ranged_skill}=[[[[@{ranged}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
+                    <input type="text" class="sheet-text_skillname" name=attr_ranged_skill />
+                    <input name="attr_tagskill8" value="1" type="checkbox">&nbsp;&nbsp;
+                    <input type="number" class="sheet-number" name="attr_ranged" value="(@{mod-ranged} + (floor((@{strength_base} - 10)/2)) + (@{dexterity_base} - 10) + (floor((@{intelligence_base} -10)/2)))" disabled="true"/>
+                    <input type="number" class="sheet-number"name="attr_mod-ranged" value="0" />                    
+                </fieldset>
             </div>
         </div>
     </div>
@@ -235,12 +302,12 @@
             <h3 style="width:98%">Support Skills</h3>
             <div class="sheet-center_skill" style="width:95%">
             <div>
-                <input type="text" class="sheet-text_stattag" value="Roll" readonly style="width:10%"/>
+                <input type="text" class="sheet-text_statscenter" value="Roll" readonly style="width:10%"/>
                 <input type="text" class="sheet-text_statscenter" value="Skill" readonly style="width:27%"/>
-                <input type="text" class="sheet-text_stattag" value="TAG" readonly style="width:9%"/>
-                <input type="text" class="sheet-text_stattag" value="Total" readonly style="width:11%"/>
-                <input type="text" class="sheet-text_stattag" value="Temp" readonly style="width:11%"/>
-                <input type="text" class="sheet-text_stattag" value="+/-" readonly style="width:11%"/>
+                <input type="text" class="sheet-text_statscenter" value="XP" readonly style="width:9%"/>
+                <input type="text" class="sheet-text_statscenter" value="Total" readonly style="width:11%"/>
+                <input type="text" class="sheet-text_statscenter" value="Temp" readonly style="width:11%"/>
+                <input type="text" class="sheet-text_statscenter" value="+/-" readonly style="width:9%"/>
             </div>
             <div>
                 <button class="sheet-skill_button" type='roll' name="attr_roll-blacksmith" value="&{template:default} {{name=@{character_name}}} {{Blacksmith=[[[[@{blacksmith}]] + [[?{Skill Mod|0}]] - [[1d100]] ]]}}" /></button>
@@ -382,7 +449,6 @@
     </div>
     </div>
     </div>
-
 
 <div class="sheet-tab-content sheet-tab3">
     <div class='sheet-2colrow'>
@@ -733,87 +799,38 @@
 </div>
 </div>
 
-<div class="sheet-tab-content sheet-tab4">
-    <h3 style="width:98%">Tames</h3>
-    <fieldset class="repeating_vehicle">
-    <div class="sheet-center_armor" style="width:55%">
-        <div class="sheet-tab-br"></div>
-        <div>
-        <div>
-            <input type="text" class="sheet-text_damage" value="Vehicle" readonly style="width:15%:font-size:20px;font:bold"/>
-            <input type="text" class="sheet-number_formula" name="attr_vehicle_name" style="width:50%"/>
-        </div>
-        <div>
-            <input type="text" class="sheet-text_damage" value="AP" readonly style="width:10%"/>
-            <input type="number" class="sheet-number" name="attr_vehicle_ap" value="0"/>
-            <input type="text" class="sheet-text_damage" value="HP" readonly style="width:15%"/>
-            <input type="number" class="sheet-number" name="attr_vehicle_hit_points-current" value="0" />
-            <input type="number" class="sheet-number" name="attr_vehicle_hit_points-max" value="0" />
-        </div>
-        <div>
-            <input type="text" class="sheet-text_damage" value="RR" readonly style="width:10%"/>
-            <input type="number" class="sheet-number" name="attr_vehicle_radiation_resistance" value="0"/>
-            <input type="text" class="sheet-text_damage" value="Seating" readonly style="width:15%"/>
-            <input type="number" class="sheet-number" name="attr_vehicle_seating-1" value="0"/>
-            <input type="number" class="sheet-number" name="attr_vehicle_seating-2" value="0"/>
-        </div>
-        <div>
-            <input type="text" class="sheet-text_damage" value="Pilots" readonly style="width:10%"/>
-            <input type="number" class="sheet-number" name="attr_vehicle_pilots" value="0"/>
-            <input type="text" class="sheet-text_damage" value="Storage" readonly style="width:15%"/>
-            <input type="number" class="sheet-number" name="attr_vehicle_storage-1" value="0"/>
-            <input type="number" class="sheet-number" name="attr_vehicle_storage-2" value="0"/>
-        </div>
-            <div>
-                <input type="text" class="sheet-text_damage" value="" readonly style="width:17%"/>
-                <input type="text" class="sheet-text_damage" value="Total" readonly style="width:10%"/>
-                <input type="text" class="sheet-text_damage" value="Base" readonly style="width:11%"/>
-                <input type="text" class="sheet-text_damage" value="Mod" readonly style="width:11%"/>
-            </div>
-            <div>
-                <input type="text" class="sheet-text_damage" style="color : #ADD8E6;" value="AC" readonly />
-                <input type="number" class="sheet-number" style="background: #ADD8E6" name="attr_vehicle_total_armorclass" value='@{base_vehicle_armorclass} + @{mod_vehicle_armorclass}' disabled style="width:10%"/>
-                <input type="number" class="sheet-number" name="attr_base_vehicle_armorclass" value="0" style="width:12%"/>
-                <input type="number" class="sheet-number" name="attr_mod_vehicle_armorclass" value="0" style="width:12%"/>
-                
-            </div>
-            <div>
-                <input type="text" class="sheet-text_damage" style="color : #BEBEBE;" value="Normal" readonly />
-                <input type="number" class="sheet-number" style="background: #BEBEBE" name="attr_vehicle_damage_threshold_normal" value="@{vehicle_damage_threshold_base-normal} + @{vehicle_damage_threshold_mod-normal}" disabled style="width:10%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_base-normal" value="0" style="width:12%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_mod-normal" value="0" style="width:12%"/>
-                
-            </div>
-            <div>
-                <input type="text" class="sheet-text_damage" style="color : #E3242B;" value="Laser" readonly />
-                <input type="number" class="sheet-number" style="background: #E3242B" name="attr_vehicle_damage_threshold_laser" value="@{vehicle_damage_threshold_base-laser} + @{vehicle_damage_threshold_mod-laser}" disabled="true"style="width:10%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_base-laser" value="0" style="width:12%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_mod-laser" value="0" style="width:12%"/>
-                
-            </div>
-            <div>
-                <input type="text" class="sheet-text_damage" style="color : #DD571C;" value="Fire" readonly />
-                <input type="number" class="sheet-number" style="background: #DD571C" name="attr_vehicle_damage_threshold_fire" value="@{vehicle_damage_threshold_base-fire} + @{vehicle_damage_threshold_mod-fire}" disabled="true"style="width:10%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_base-fire" value="0" style="width:12%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_mod-fire" value="0" style="width:12%"/>
-            </div>
-            <div>
-                <input type="text" class="sheet-text_damage" style="color : #028E5F;" value="Plasma" readonly />
-                <input type="number" class="sheet-number" style="background: #028E5F" name="attr_vehicle_damage_threshold_plasma" value="@{vehicle_damage_threshold_base-plasma} + @{vehicle_damage_threshold_mod-plasma}" disabled="true"style="width:10%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_base-plasma" value="0" style="width:12%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_mod-plasma" value="0" style="width:12%"/>
-            </div>
-            <div>
-                <input type="text" class="sheet-text_damage" style="color : #FBE106;" value="Explosion" readonly />
-                <input type="number" class="sheet-number" style="background: #FBE106" name="attr_vehicle_damage_threshold_explosion" value="@{vehicle_damage_threshold_base-explosion} + @{vehicle_damage_threshold_mod-explosion}" disabled="true"style="width:10%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_base-explosion" value="0" style="width:12%"/>
-                <input type="number" class="sheet-number" name="attr_vehicle_damage_threshold_mod-explosion" value="0" style="width:12%"/>
-            </div>
-            <div>
-        <div>
-             <textarea style="width:95%" name="attr_vehicle_note" placeholder="Vehicle Notes" style="height:13%"></textarea>
-        </div>
-    </div>
-    </div>
-    </fieldset>
-</div>
+    
+<script type="text/worker">
+/* ===== PARAMETERS ==========
+destinations = the name of the attribute that stores the total quantity
+        can be a single attribute, or an array: ['total_cost', 'total_weight']
+        If more than one, the matching fields must be in the same order. 
+    section = name of repeating fieldset, without the repeating_
+    fields = the name of the attribute field to be summed
+          destination and fields both can be a single attribute: 'weight'
+          or an array of attributes: ['weight','number','equipped']
+*/
+const repeatingSum = (destinations, section, fields) => {
+    if (!Array.isArray(destinations)) destinations = [destinations.replace(/\s/g, '').split(',')];
+    if (!Array.isArray(fields)) fields = [fields.replace(/\s/g, '').split(',')];
+    getSectionIDs(`repeating_${section}`, idArray => {
+        const attrArray = idArray.reduce((m, id) => [...m, ...(fields.map(field => `repeating_${section}_${id}_${field}`))], []);
+        getAttrs([...attrArray], v => {
+            const getValue = (section, id, field) => v[`repeating_${section}_${id}_${field}`] === 'on' ? 1 : parseFloat(v[`repeating_${section}_${id}_${field}`]) || 0;
+            const commonMultipliers = (fields.length <= destinations.length) ? [] : fields.splice(destinations.length, fields.length - destinations.length);
+            const output = {};
+            destinations.forEach((destination, index) => {
+                output[destination] = idArray.reduce((total, id) => total + getValue(section, id, fields[index]) * commonMultipliers.reduce((subtotal, mult) => subtotal * getValue(section, id, mult), 1), 0);
+            });
+            setAttrs(output);
+        }); 
+    }); 
+};
+on('change:repeating_inventory remove:repeating_inventory', function() {
+	repeatingSum("current_enc","inventory",["item_enc","item_amount"]);
+});
+</script>
+
+<input type="hidden" name="attr_str_weap_cb" value="((@{strength} - 10) + (floor((@{dexterity} - 10)/2)) + (floor((@{intelligence} - 10)/2)))" />
+<input type="hidden" name="attr_dex_weap_cb" value="((@{dexterity}-10) + (floor((@{strength} - 10)/2)) + (floor((@{intelligence} - 10)/2)))" />
+
