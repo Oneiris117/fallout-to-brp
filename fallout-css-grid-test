@@ -1,38 +1,52 @@
 .charsheet .sheet-grid-section {
   display: grid;
-  grid-template-columns: 10% 27% 9% 11% 11% 9%;
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "L1 L2 L3 L4 L5 L6";
-  grid-gap: 5px;
-  margin: 1px;
+  grid-gap: 0px;
+}
+
+.charsheet div.sheet-block {
+  display: grid;
+  justify-content: left;
+  border: none;
 }
 
 .charsheet input[type="text"] {
-  width: 100%;
+  width: 50%;
+}
+
+.charsheet input[type="text"]::-webkit-input-placeholder {
+  width: auto;
 }
 
 .charsheet div.sheet-L1 {
-  grid-area: L1;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .charsheet div.sheet-L2 {
-  grid-area: L2;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .charsheet div.sheet-L3 {
-  grid-area: L3;
+  grid-column: 3;
+  grid-row: 1;
 }
 
 .charsheet div.sheet-L4 {
-  grid-area: L4;
+  grid-column: 4;
+  grid-row: 1;
 }
 
 .charsheet div.sheet-L5 {
-  grid-area: L5;
+  grid-column: 5;
+  grid-row: 1;
 }
 
 .charsheet div.sheet-L6 {
-  grid-area: L6;
+    grid-column 6;
+    grid-row 1;
 }
 
 /*-----background-----*/
@@ -503,7 +517,7 @@ input.sheet-roundcheck[type="checkbox"]:checked + span::before
     border: 0px solid #7DE8F4; 
     border-radius: 5px; 
     box-shadow: 0 0 5px 3px #000000;
-    width: 16%;
+    width: auto;
     margin: 5px;
 }
 
